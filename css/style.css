@@ -784,6 +784,7 @@ footer{
         margin-top: 0;
         text-align: center;
     }
+
 }
 
 @media screen and (max-width:500px){
@@ -898,6 +899,9 @@ footer{
         grid-row: 7/-1;
     }
 
+    .abouts p{
+        text-align: start;
+    }
 }
 
 @media screen and (prefers-reduced-motion: reduce){
