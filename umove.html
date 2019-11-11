@@ -36,24 +36,23 @@
                 in is essential.</p>
             <h3>Competitor Analysis</h3>
             <ul>
-                <li>UM Housing site</li>
+                <li>UM Housing site
                 <p>UM’s official housing site provides information about on-campus housing and a platform for landlords and the
                     students to pair. It includes structured housing and multi-choice traffic information, but do not optimize
-                    information for international students.</p>
-                <li>MTSA life database</li>
+                    information for international students.</p></li>
+                <li>MTSA life database
                 <p>A wiki-like database constructed by Michigan Taiwanese Student Association (MTSA). Provides comprehensive
                     information needed for Taiwanese students to live in Ann Arbor. The contents are maintained by a few students.
                     Provide cultural information and few housing experiences. However, the quantity of experiences provided stays
-                    low, and the information provided isn’t updated.</p>
-                <li>UMICH Housing, Rooms, Apartments, Sublets</li>
+                    low, and the information provided isn’t updated.</p></li>
+                <li>UMICH Housing, Rooms, Apartments, Sublets
                 <p>Students of UM formed a Facebook group as a platform to share housing information. Also, provide the landlords a
                     place to seek for tenants. Communications through Facebook are more convenient than E-mail. However, it still
-                    cannot solve the problem of the cultural problems.</p>
-                <li>Apartment List</li>
+                    cannot solve the problem of the cultural problems.</p></li>
+                <li>Apartment List
                 <p>Apartment List is a web-based apartment pairing system. Users provide needs and preferences, and the system
                     provides filtered housing information for the users. The results are highly related to the users’ needs, but
-                    cannot help with more complicated tasks like cultural and geographical problems. </p>
-                </p>
+                    cannot help with more complicated tasks like cultural and geographical problems. </p></li>
             </ul>
             <h3>Sketch</h3>
             <img class="sketch" src="image/sketch.png" alt="Sketch">
@@ -65,24 +64,24 @@
                 undergraduate<br>
             </p>
             <ul id="personaList">
-            <li>Motivation:</li>
+            <li>Motivation:
             <ul>
                 <li>He’s going to move to Ann Arbor in months</li>
                 <li>He’s looking forward for new life in the States</li>
                 <li>He’s an out-going person who love to know more people</li>
-            </ul>
-            <li>Goals:</li>
+            </ul></li>
+            <li>Goals:
             <ul>
                 <li>To find a place to live with reasonable costs</li>
                 <li>To learn more details about the Ann Arbor and the campus</li>
-            </ul>
-            <li>Frustrations:</li>
+            </ul></li>
+            <li>Frustrations:
             <ul>
                 <li>The weather is so differed between his hometown and Ann Arbor</li>
                 <li>He has limited experience communicating in English</li>
                 <li>He hasn’t had any experience lives in a relatively small city</li>
                 <li>He doesn’t have any experience renting a house/apartment</li>
-            </ul>
+            </ul></li>
             </ul>
             <h3>Paper Prototype</h3>
             <img class="paperPrototype" src="image/umove.jpg" alt="Paper Prototype">
@@ -99,47 +98,31 @@
         </div>
     </div>
     <footer>
-        <div class="footnav">
-            <ul>
-                <li><a href="index.html">Projects</a></li>
-                <a class="seperator"> | </a>
-                <li><a href="photography.html">Photography</a></li>
-                <a class="seperator"> | </a>
-                <li><a href="aboutme.html">About Me</a></li>
-            </ul>
-        </div>
-        <div id="socialnetwork">
-            <a href="https://www.linkedin.com/in/YJ-Cheng" target="_blank"><img src="image/linkedin.png" alt="link to my linkedin profile"></a>
-            <a href="https://www.researchgate.net/profile/Yun_Jen_Cheng" target="_blank"><img src="image/researchgate.png" alt="link to my researchgate profile"></a>
-            <a href="mailto:yhcheng@umich.edu"><img src="image/mail.png" alt="send me a mail"></a>
-            <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
-        </div>
-        <br><br>
-        <a id="gotop">^</a>
-    </footer>
+            <div class="footnav">
+                <ul>
+                    <li><a href="index.html">Projects</a></li>
+                    <li class="seperator"><a> | </a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li class="seperator"><a> | </a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </div>
+            <div id="socialnetwork">
+                <a href="https://www.linkedin.com/in/YJ-Cheng" target="_blank"><img src="image/linkedin.png"
+                        alt="link to my linkedin profile"></a>
+                <a href="https://www.researchgate.net/profile/Yun_Jen_Cheng" target="_blank"><img
+                        src="image/researchgate.png" alt="link to my researchgate profile"></a>
+                <a href="mailto:yhcheng@umich.edu" target="_blank"><img src="image/mail.png" alt="send me a mail"></a>
+                <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
+            </div>
+            <script src="js/javascript.js"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("nav ul li:first-of-type a").css("color", "#28536B")
+                })
+            </script>
+        </footer>
     </div>
 </body>
-<foot>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("nav ul li:first-of-type a").css("color","#28536B")
-        })
-
-        $(function () {
-            $("#gotop").click(function () {
-                $("html,body").animate({ scrollTop: 0 }, 'fast');
-                return false;
-            });
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 400) {
-                    $('#gotop').fadeIn();
-                } else {
-                    $('#gotop').fadeOut();
-                }
-            });
-        });
-    </script>
-</foot>
 </html>
