@@ -408,7 +408,7 @@ nav{
 }
 
 .content p{
-    color: rgb(141, 141, 141)
+    color: #5E5E5E
 }
 
 .leaveMesseage{
@@ -564,7 +564,7 @@ input[type=submit]:hover {
 #personaList ul li{
     list-style-type: circle;
     margin-left: 25px;
-    color: gray;
+    color: #5E5E5E;
     font-weight: normal;
     list-style-position: outside;
     text-align: justify;
