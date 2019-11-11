@@ -16,9 +16,9 @@
     <nav>
         <ul>
             <li><a href="index.html">Projects</a></li>
-            <a class="seperator"> | </a>
+            <li class="seperator"><a> | </a></li>
             <li><a href="photography.html">Photography</a></li>
-            <a class="seperator"> | </a>
+            <li class="seperator"><a> | </a></li>
             <li><a href="aboutme.html">About Me</a></li>
         </ul>
     </nav>
@@ -78,47 +78,31 @@
         </form>
     </div>
     <footer>
-        <div class="footnav">
-            <ul>
-                <li><a href="index.html">Projects</a></li>
-                <a class="seperator"> | </a>
-                <li><a href="photography.html">Photography</a></li>
-                <a class="seperator"> | </a>
-                <li><a href="aboutme.html">About Me</a></li>
-            </ul>
-        </div>
-        <div id="socialnetwork">
-            <a href="https://www.linkedin.com/in/YJ-Cheng" target="_blank"><img src="image/linkedin.png" alt="link to my linkedin profile"></a>
-            <a href="https://www.researchgate.net/profile/Yun_Jen_Cheng" target="_blank"><img src="image/researchgate.png" alt="link to my researchgate profile"></a>
-            <a href="mailto:yhcheng@umich.edu"><img src="image/mail.png" alt="send me a mail"></a>
-            <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
-        </div>
-        <br><br>
-        <a id="gotop">^</a>
-    </footer>
+            <div class="footnav">
+                <ul>
+                    <li><a href="index.html">Projects</a></li>
+                    <li class="seperator"><a> | </a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li class="seperator"><a> | </a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </div>
+            <div id="socialnetwork">
+                <a href="https://www.linkedin.com/in/YJ-Cheng" target="_blank"><img src="image/linkedin.png"
+                        alt="link to my linkedin profile"></a>
+                <a href="https://www.researchgate.net/profile/Yun_Jen_Cheng" target="_blank"><img
+                        src="image/researchgate.png" alt="link to my researchgate profile"></a>
+                <a href="mailto:yhcheng@umich.edu" target="_blank"><img src="image/mail.png" alt="send me a mail"></a>
+                <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
+            </div>
+            <script src="js/javascript.js"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("nav ul li:nth-of-type(3) a").css("color", "#28536B")
+                })
+            </script>
+        </footer>
     </div>
 </body>
-<foot>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("nav ul li:nth-of-type(3) a").css("color","#28536B")
-        })
-
-        $(function () {
-            $("#gotop").click(function () {
-                $("html,body").animate({ scrollTop: 0 }, 'fast');
-                return false;
-            });
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 400) {
-                    $('#gotop').fadeIn();
-                } else {
-                    $('#gotop').fadeOut();
-                }
-            });
-        });
-    </script>
-</foot>
 </html>
