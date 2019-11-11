@@ -791,7 +791,7 @@ footer{
     .container{
         width: 100%;
         grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 10px auto auto 50px auto auto auto;
+        grid-template-rows: 10px auto auto 50px auto auto auto auto;
         grid-row-gap: 0px;
     }
 
@@ -896,10 +896,14 @@ footer{
 
     footer{
         grid-column: 1/-1;
-        grid-row: 7/-1;
+        grid-row: 8/-1;
     }
 
     .abouts p{
+        text-align: start;
+    }
+
+    #personaList ul li{
         text-align: start;
     }
 }
