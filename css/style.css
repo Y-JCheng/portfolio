@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
 
@@ -29,12 +29,6 @@ h2{
 h3{
     font-size: 22px;
     font-weight: bold;
-}
-
-.saymore{
-    color: #666666;
-    font-weight: normal;
-    font-size: 18px;
 }
 
 h4{
@@ -78,25 +72,26 @@ small{
 
 }
 
-nav a:hover{
+nav li:not(.seperator) a:hover{
     border-bottom: 2px solid #28536B;
     color: #28536B
 }
 
-nav a:focus{
+nav li:not(.seperator) a:focus{
     border-bottom: 2px solid #28536B;
-    color: #28536B
+    color: #28536B;
 }
 
 nav ul{
     text-align: right;
+    box-sizing: border-box;
 }
 
 nav li{
     margin: 5px 5px;
 }
 
-.footnav a:hover{
+.footnav li:not(.seperator) a:hover{
     border-bottom: 2px solid #DDE8E9;
 }
 
@@ -138,6 +133,7 @@ header{
     background-color: rgb(255, 255, 255);
     text-align: left; 
     vertical-align: middle;
+    font-family: 'Merriweather', serif;
 }
 
 nav{
@@ -173,85 +169,239 @@ nav{
 
 
 /* css for projects page */
-.projectsView{
-    grid-column: 2/6;
-    grid-row: 3/4;
-    overflow: hidden;
-    text-align: center;
-    height: auto;
-    position: relative;
-}
 
 .picdiv{
-    display: none;
     width: 100%;
     height: auto;
     transition: 0.6s ease;
+    position: relative;
+}
+
+.greeting{
+    height: 300px;
+    background-image: linear-gradient(to bottom, rgba(82, 164, 179, 0.2), rgba(82, 164, 179, 0.3),rgba(82, 164, 179, 0.3),  rgba(82, 164, 179, 0.5), rgba(82, 164, 179, 0.6));
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    position: relative;
+}
+
+.greeting div{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.greeting h1{
+    margin: 0;
+}
+
+.greeting h1:not(.swap){
+    font-weight: normal;
+    display: block;
+    padding-top: 20px;
+}
+
+.project_container{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 5fr 1fr 3fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 0;
+}
+
+#projects_greeting{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    min-height: 200px;
+}
+
+#projects_greeting h1{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+#projects_greeting div{
+    -ms-transform: translate(0, calc(-50% - 30px));
+    transform: translate(0, calc(-50% - 30px));
+}
+
+.picdiv:hover div {
+    opacity: 1;
+}
+
+.projectsPic{
+    width: 100%;
+}
+
+.caption{
+    padding-left: 10%;
+    position: relative;
+}
+
+.caption_container{
+    top:50%;
+    position: absolute;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#pro_umove{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background-image: linear-gradient(#afd0ff65,#afd0ff78);
+}
+
+#umove_caption{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#umove_pic{
+    grid-column: 3/-1;
+    grid-row: 2/3;
+}
+
+#pro_intranet{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    background-image: linear-gradient(#bebebe65,#bebebe78);
+}
+
+#intranet_caption{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#intranet_pic{
+    grid-column: 3/-1;
+    grid-row: 3/4;
+}
+
+#pro_chi{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    background-image: linear-gradient(#ffb5cb65,#ff91b265);
+}
+
+#chi_caption{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#chi_pic{
+    grid-column: 3/-1;
+    grid-row: 4/5;
+}
+
+#projects_others{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    min-height: 200px;
+}
+
+#projects_others h1{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+#pro_photography{
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    background-image: linear-gradient(#ffb5cb65,#ff91b265);
+}
+
+#photography_caption{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+#photography_pic{
+    grid-column: 3/-1;
+    grid-row: 6/7;
+}
+
+#pro_sna{
+    grid-column: 1/-1;
+    grid-row: 7/8;
+    background-image: linear-gradient(#ffc40060,#c5970060);
+}
+
+#sna_caption{
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+#sna_pic{
+    grid-column: 3/-1;
+    grid-row: 7/8;
+}
+
+#projects_finish{
+    grid-column: 1/-1;
+    grid-row: 8/-1;
+    min-height: 200px;
+    padding-left: 0;
+    text-align: center;
+}
+
+#projects_finish div{
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#projects_finish h1{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
 }
 
 .picdiv a{
     display: inline-block;
     width: 100%;
     height: auto;
+    font-weight: normal;
 }
 
 .picdiv img{
     display: inline-block;
+    vertical-align: top;
     width: 100%;
     height: auto;
 }
 
-.projectsPic{
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.previous, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    background-color: rgba(82, 164, 179, 0.4);
-}
-
-.previous {
-    left: 0;
-    border-radius: 0 5px 5px 0;
-}
-
-.next {
-    right: 0;
-    border-radius: 5px 0 0 5px;
-}
-
-.previous:hover, .next:hover {
-    background-color: #52A4B3;
-    text-decoration: none;
-}
-
-.picdiv p{
-    position: absolute;
-    width: 100%;
-    padding: 20px 0px;
+.caption h1{
     margin: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.8);
-    color: #28536B;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 0;
+    font-size: 30px;
 }
 
-.projectsName{
-    grid-column: 2/6;
-    grid-row: 4/5;
+.caption h4{
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+}
+
+.caption p{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+}
+
+.swap{
+    position: absolute;
+    -ms-transform: translate(-50%, 5px);
+    transform: translate(-50%, 5px);
+    transition: opacity .3s ease-in;
+    margin-bottom: 5px;
+}
+
+.swap + .swap {
+    opacity: 0;
 }
 
 /* CSS for photography page */
@@ -360,6 +510,10 @@ nav{
 
 [class*=picbox]:hover p {
     opacity: 1;
+}
+
+[class*=picbox] img {
+    vertical-align: top;
 }
 
 .gallery_container p{
@@ -503,27 +657,59 @@ input[type=submit]:hover {
 .projecttitle{
     grid-column: 1/-1;
     grid-row: 3/4;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.609)),url("../image/umove.jpg");
-    min-height: 100px; 
+    min-height: 250px; 
     background-attachment: fixed;
-    background-position: top;
+    background-position: 0px -100px;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding:20px;
+    background-size: 100%;
+    position: relative;
     line-height: 2;
 }
 
+.projecttitle div{
+    margin: 0;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#umoveTitle{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url("../image/umove.jpg");
+}
+
 #lightboxTitle{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.609)),url("../image/lightbox_classification.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url("../image/lightbox_classification.jpg");
 }
 
 #lSITitle{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.609)),url("../image/lsi_intranet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url("../image/lsi_intranet.jpg");
+}
+
+#SNATitle{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url("../image/SNA.jpg");
+}
+
+.projecttitle h2{
+    color: white;
+    font-size: 36px;
+    max-width: 60%;
+    margin: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0px;
 }
 
 .projecttitle h3{
-    color: white;
-    padding: 0 10%;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+}
+
+.abouts h3{
+    color: #52A4B3;
 }
 
 .abouts ul li{
@@ -579,6 +765,55 @@ input[type=submit]:hover {
     color: rgb(141, 141, 141);
 }
 
+/* CSS for Socail Network Analysis */
+#SNA{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+}
+
+.SNAbutton{
+    border: 2px solid #666666;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 0 0 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.SNAbutton:hover{
+    background-color: rgba(82, 164, 179, 0.1);
+    color: #5E5E5E;
+}
+
+.showing{
+    background-color: rgba(40, 84, 107);
+    border-color: rgba(40, 84, 107);
+    color: white;
+}
+
+.SNAinfocontainer{
+    border: 2px solid rgba(40, 84, 107);
+    border-radius: 5px;
+    background: rgba(40, 84, 107);
+}
+
+.SNAinfo{
+    background-color: white;
+    display: none;
+    padding: 5px 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.showinfo{
+    display: block;
+}
+
 /* CSS for footer */
 footer{
     background-color: #28536B;
@@ -601,6 +836,7 @@ footer{
 #gotop{
     cursor: pointer;
     position: fixed;
+    display: none;
     bottom: 20px;
     right: 20px;
     width: 20px;
@@ -609,13 +845,28 @@ footer{
     font-size: 18px;
     border-radius: 20px;
     background-color: rgba(40, 84, 107, 0.4);
+    color: white;
 }
 
 #gotop:hover{
     background-color: #28536B;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1100px){
+    .SNAbutton{
+        border: 2px solid #666666;
+        border-radius: 5px;
+        width: auto;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        margin: 10px 0 10px 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:830px){
     .container{
         grid-template-rows: 10px auto auto auto auto auto auto auto;
         grid-row-gap: 10px;

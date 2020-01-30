@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
     <title>Yun-Jen (William) Cheng</title>
 </head>
 
@@ -24,49 +25,139 @@
             <ul>
                 <li><a href="index.html">Projects</a></li>
                 <li class="seperator"><a> | </a></li>
-                <li><a href="photography.html">Photography</a></li>
+                <li><a href="photography.html">Resume</a></li>
                 <li class="seperator"><a> | </a></li>
                 <li><a href="aboutme.html">About Me</a></li>
             </ul>
         </nav>
-        <div class="projectsView" id="projectsView" role="main">
-            <div class="picdiv">
+
+        <div class="greeting">
+            <div>
+                <h1>Hello, I'm Yun-Jen Cheng.</h1>
+                <h1 class="swap">A UX designer.</h1>
+                <h1 class="swap">A UX researcher.</h1>
+                <h1 class="swap">A Photographer.</h1>
+                </br>
+                <h1>Currently studying UX design at Umich</h1>
+            </div>
+        </div>
+
+        <div class="project_container">
+            <div id="projects_greeting" class="caption">
+                <div class="caption_container">
+                <h1>I focus on research-based design </br>and aim for fulfilling the needs of the users.</h1>
+                <h1>Here are some selections from the projects I worked on</h1>
+            </div>
+            </div>
+
+            <div id="pro_umove">
+            </div>
+            <div id="umove_caption" class="caption">
                 <a href="umove.html">
-                    <img class="projectsPic" src="image/umove.jpg" alt="UMove for newbies">
-                    <p class="caption">A website for new-coming UM students to find there dream home</p>
+                    <div class="caption_container">
+                        <h1>UMove for newbies</h1>
+                        <h4>UX / UI / Research | 4 monthes</h4>
+                        <p>Property rental platform designed for </br>the international students in Umich to
+                            find a suitable place to live.</p>
+                    </div>
                 </a>
             </div>
-            <div class="picdiv">
-                <a href="lightbox_classification.html">
-                    <img class="projectsPic" src="image/lightbox_classification.jpg" alt="Lightbox Classification">
-                    <p class="caption">The first user-centered photobook classification system in Asia</p>
+            <div id="umove_pic">
+                <a href="umove.html">
+                    <img class="projectsPic" src="image/UMove_sample.gif" alt="UMove for newbies">
                 </a>
             </div>
-            <div class="picdiv">
-                <a href="lsi_intranet.html">
-                    <img class="projectsPic" src="image/lsi_intranet.jpg" alt="UMLSI Intranet">
-                    <p class="caption">A research project for UM Life Science Institute's intranet system</p>
+
+            <div id="pro_intranet">
+            </div>
+            <div id="intranet_caption" class="caption">
+                <a href="intranet.html">
+                    <div class="caption_container">
+                        <h1>Intranet Evaluation</h1>
+                        <h4>Research | 3 monthes</h4>
+                        <p>UX research project on </br>helping an research institute to evaluate
+                            their intranet system.</p>
+                    </div>
                 </a>
             </div>
-            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div id="intranet_pic">
+                <a href="intranet.html">
+                    <img class="projectsPic" src="image/UMove_sample.gif" alt="Intranet Evaluation">
+                </a>
+            </div>
+
+            <div id="pro_chi">
+            </div>
+            <div id="chi_caption" class="caption">
+                <a href="chi.html">
+                    <div class="caption_container">
+                        <h1>ChompBerry</h1>
+                        <h4>UX / UI / Research | 4 monthes</h4>
+                        <p>Gamified application designed for </br>raising the awareness of stress eating behaviour.</p>
+                    </div>
+                </a>
+            </div>
+            <div id="chi_pic">
+                <a href="intranet.html">
+                    <img class="projectsPic" src="image/UMove_sample.gif" alt="ChompBerry">
+                </a>
+            </div>
+
+            <div id="projects_others" class="caption">
+                <div class="caption_container">
+                <h1>I'm also a photographer and </br>interested in learning new things.</h1>
+            </div>
+            </div>
+
+            <div id="pro_photography">
+            </div>
+            <div id="photography_caption" class="caption">
+                <a href="photography.html">
+                    <div class="caption_container">
+                        <h1>Photography</h1>
+                        <h4>Photographer</h4>
+                        <p>My photography works.</p>
+                    </div>
+                </a>
+            </div>
+            <div id="photography_pic">
+                <a href="photography.html">
+                    <img class="projectsPic" src="image/UMove_sample.gif" alt="Photography">
+                </a>
+            </div>
+
+            <div id="pro_sna">
+            </div>
+            <div id="sna_caption" class="caption">
+                <a href="sna.html">
+                    <div class="caption_container">
+                        <h1>Network Topology Visualization</h1>
+                        <h4>Researcher / Developer</h4>
+                        <p>My attempt on D3.js </br>to visualize social network </p>
+                    </div>
+                </a>
+            </div>
+            <div id="sna_pic">
+                <a href="sna.html">
+                    <img class="projectsPic" src="image/sna_sample.gif" alt="Network Topology Visualization">
+                </a>
+            </div>
+
+            <div id="projects_finish" class="caption">
+                <div class="caption_container">
+                <h1><b>“Life is like riding a bicycle. </br>To keep your balance you must keep moving.”</b></h1>
+                <h1> – Albert Einstein</h1>
+            </div>
+            </div>
+
         </div>
-        <div class="projectsName">
-            <ul>
-                <li><a class="Name" href="umove.html" onmouseover="currentSlide(1)" onfocus="currentSlide(1)">UMove for
-                        newbies</a></li>
-                <li><a class="Name" href="lightbox_classification.html" onmouseover="currentSlide(2)"
-                        onfocus="currentSlide(2)">Lightbox Classification</a></li>
-                <li><a class="Name" href="lsi_intranet.html" onmouseover="currentSlide(3)"
-                        onfocus="currentSlide(3)">UMLSI Intranet</a></li>
-            </ul>
-        </div>
+
         <footer>
             <div class="footnav">
                 <ul>
                     <li><a href="index.html">Projects</a></li>
                     <li class="seperator"><a> | </a></li>
-                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="photography.html">Resume</a></li>
                     <li class="seperator"><a> | </a></li>
                     <li><a href="aboutme.html">About Me</a></li>
                 </ul>
@@ -79,8 +170,8 @@
                 <a href="mailto:yhcheng@umich.edu" target="_blank"><img src="image/mail.png" alt="send me a mail"></a>
                 <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
             </div>
-            <script src="js/javascript.js"></script>
             <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script src="js/wordchanging.js"></script>
             <script>
                 $(document).ready(function () {
                     $("nav ul li:first-of-type a").css("color", "#28536B")
@@ -89,4 +180,5 @@
         </footer>
     </div>
 </body>
+
 </html>
