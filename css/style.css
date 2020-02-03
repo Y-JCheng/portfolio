@@ -242,6 +242,17 @@ nav{
 .caption{
     padding-left: 10%;
     position: relative;
+    grid-column: 1/2;
+}
+
+.caption_pic{
+    padding-left: 10%;
+    position: relative;
+    grid-column: 1/2;
+}
+
+.projects_pic{
+    grid-column: 3/-1;
 }
 
 .caption_container{
@@ -258,12 +269,10 @@ nav{
 }
 
 #umove_caption{
-    grid-column: 1/2;
     grid-row: 2/3;
 }
 
 #umove_pic{
-    grid-column: 3/-1;
     grid-row: 2/3;
 }
 
@@ -274,12 +283,10 @@ nav{
 }
 
 #intranet_caption{
-    grid-column: 1/2;
     grid-row: 3/4;
 }
 
 #intranet_pic{
-    grid-column: 3/-1;
     grid-row: 3/4;
 }
 
@@ -290,12 +297,10 @@ nav{
 }
 
 #chi_caption{
-    grid-column: 1/2;
     grid-row: 4/5;
 }
 
 #chi_pic{
-    grid-column: 3/-1;
     grid-row: 4/5;
 }
 
@@ -314,16 +319,14 @@ nav{
 #pro_photography{
     grid-column: 1/-1;
     grid-row: 6/7;
-    background-image: linear-gradient(#ffb5cb65,#ff91b265);
+    background-image: linear-gradient(#5ac2ab65,#5ac2ab41);
 }
 
 #photography_caption{
-    grid-column: 1/2;
     grid-row: 6/7;
 }
 
 #photography_pic{
-    grid-column: 3/-1;
     grid-row: 6/7;
 }
 
@@ -334,12 +337,10 @@ nav{
 }
 
 #sna_caption{
-    grid-column: 1/2;
     grid-row: 7/8;
 }
 
 #sna_pic{
-    grid-column: 3/-1;
     grid-row: 7/8;
 }
 
@@ -864,6 +865,23 @@ footer{
         padding: 10px;
         cursor: pointer;
     }
+
+    .caption{
+        min-height: 300px;
+    }
+
+    .projects_pic{
+        grid-column: 2/-1;
+        position: relative;
+    }
+
+    .projects_pic img{
+        position: absolute;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        top:50%
+
+    }
 }
 
 @media screen and (max-width:830px){
@@ -888,17 +906,25 @@ footer{
         margin: 10px 0;
     }
 
-    .projectsView{
-        grid-row: 5/6;
+    .greeting{
+        grid-column: 1/-1;
+        grid-row: 4/5;
     }
 
-    .projectsName{
+    .project_container{
         grid-row: 6/7;
     }
 
-    .projectsName li{
-        display: list-item;
-        margin: 10px 0px;
+    #projects_greeting{
+        grid-column: 1/-1;
+    }
+
+    #projects_others{
+        grid-column: 1/-1;
+    }
+
+    .caption{
+        min-height: 400px;
     }
 
     footer{
@@ -1046,6 +1072,10 @@ footer{
         grid-row-gap: 0px;
     }
 
+    .greeting h1{
+        font-size: 20px;
+    }
+
     .name{
         grid-column: 1/-1;
         grid-row: 2/3;
@@ -1063,15 +1093,127 @@ footer{
         display: none;
     }
 
-    .projectsView{
+    .greeting{
         grid-column: 1/-1;
+        grid-row: 4/6;
+    }
+
+    .project_container{
+        grid-column: 1/-1;
+        grid-row: 7/8;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, auto);
+    }
+
+    .caption h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .caption h4 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .caption p{
+        font-size: 16px;
+    }
+
+    .caption{
+        grid-column: 1/-1;
+        min-height: 200px;
+    }
+
+    .projects_pic{
+        grid-column: 1/-1;
+        min-height: 250px;
+    }
+
+    #pro_umove{
+        grid-row: 2/4;
+    }
+
+    #umove_pic {
+        grid-row: 3/4;
+    }
+
+    #pro_intranet{
+        grid-row: 4/6;
+    }
+
+    #intranet_caption{
+        grid-row: 4/5;
+    }
+
+    #intranet_pic {
         grid-row: 5/6;
     }
 
-    .projectsName{
-        grid-column: 1/-1;
+    #pro_chi{
+        grid-row: 6/8;
+    }
+
+    #chi_caption{
         grid-row: 6/7;
-        padding-bottom: 10px;
+    }
+
+    #chi_pic {
+        grid-row: 7/8;
+    }
+
+    #projects_others{
+        grid-row: 8/9;
+    }
+
+    #pro_photography{
+        grid-row: 9/11;
+    }
+
+    #photography_caption{
+        grid-row: 9/10;
+    }
+
+    #photography_pic {
+        grid-row: 10/11;
+    }
+
+    #pro_sna{
+        grid-row: 11/13;
+    }
+
+    #sna_caption{
+        grid-row: 11/12;
+    }
+
+    #sna_pic {
+        grid-row: 12/13;
+    }
+
+    #projects_finish{
+        grid-row: 13/-1;
+    }
+
+    #projects_finish h1{
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    #projects_greeting {
+        padding-left: 5%;
+    }
+
+    #projects_greeting div{
+        transform: translate(0,-55%);
+    }
+
+    #projects_greeting h1 {
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 20px;
+    }
+
+    #projects_finish div {
+        width: 90%;
     }
 
     .active, .Name:hover {
