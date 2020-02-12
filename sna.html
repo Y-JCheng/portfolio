@@ -11,20 +11,54 @@
     <script src="https://d3js.org/d3.v4.js"></script>
     <title>Yun-Jen (William) Cheng</title>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157591765-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-    
-            gtag('config', 'UA-157591765-1');
-        </script>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157591765-1"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157591765-1');
+    </script>
+    <script>
+        $(document).ready(function () {
+                    $("#fixed-nav-bar").hide()
+                });
+        $(document).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#fixed-nav-bar').fadeIn();
+            } else {
+                $('#fixed-nav-bar').fadeOut();
+            }
+        });
+    </script>
+
 </head>
 
 <body>
-    <div class="jump"><a href="#SNATitle">Jump to content</a></div>
+    <div class="jump"><a href="#projecttitle">Jump to content</a></div>
+
+    <div id="fixed-nav-bar">
+        <div class="fix_header"></div>
+        <div class="fix_name">
+            <a href="index.html">
+                <h1> Yun-Jen </h1>
+                <h2> (William) </h2>
+                <h1> Cheng</h1>
+            </a>
+        </div>
+        <div class="fix_nav">
+            <ul>
+                <li><a href="index.html">Projects</a></li>
+                <li class="seperator"><a> | </a></li>
+                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                <li class="seperator"><a> | </a></li>
+                <li><a href="aboutme.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+    
     <div class="container">
         <header></header>
         <div class="name">
@@ -40,7 +74,7 @@
                 <li class="seperator"><a> | </a></li>
                 <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
                 <li class="seperator"><a> | </a></li>
-                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="aboutme.html">About</a></li>
             </ul>
         </nav>
         <div class="projecttitle" id="SNATitle" role="main">
@@ -132,7 +166,7 @@
                     <li class="seperator"><a> | </a></li>
                     <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
                     <li class="seperator"><a> | </a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="aboutme.html">About</a></li>
                 </ul>
             </div>
             <div id="socialnetwork">
@@ -146,6 +180,7 @@
             <script>
                 $(document).ready(function () {
                     $("nav ul li:first-of-type a").css("color", "#28536B")
+                    $(".fix_nav ul li:first-of-type a").css("color", "#28536B")
                 })
             </script>
             <script src="js/sna.js"></script>

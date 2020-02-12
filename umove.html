@@ -11,6 +11,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157591765-1"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -18,11 +19,44 @@
 
         gtag('config', 'UA-157591765-1');
     </script>
+    <script>
+        $(document).ready(function () {
+                    $("#fixed-nav-bar").hide()
+                });
+        $(document).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#fixed-nav-bar').fadeIn();
+            } else {
+                $('#fixed-nav-bar').fadeOut();
+            }
+        });
+    </script>
 
 </head>
 
 <body>
     <div class="jump"><a href="#projecttitle">Jump to content</a></div>
+
+    <div id="fixed-nav-bar">
+        <div class="fix_header"></div>
+        <div class="fix_name">
+            <a href="index.html">
+                <h1> Yun-Jen </h1>
+                <h2> (William) </h2>
+                <h1> Cheng</h1>
+            </a>
+        </div>
+        <div class="fix_nav">
+            <ul>
+                <li><a href="index.html">Projects</a></li>
+                <li class="seperator"><a> | </a></li>
+                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                <li class="seperator"><a> | </a></li>
+                <li><a href="aboutme.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container">
         <header></header>
         <div class="name">
@@ -49,8 +83,8 @@
             </div>
         </div>
         <div class="content" role="main">
-            <div id="problem_statement" class="abouts">
-                <div class="gray">
+            <div class="abouts">
+                <div id="problem_statement"  class="gray boxshadow">
                 <h4 class="quotes">
                     Finding a place to live is the very first problem international students are facing, which can highly impact their future development.</h4>
                 <p>Studies shows that the satisfaction of housing may influence students’ academic and social development, especially in the first two years. 
@@ -59,7 +93,7 @@
                     This project address the inability of international students to seek for a suitable place to rent. I explore the obstacles these students are facing, and find ways to tackle these challenges with design solutions.
                 </p>
             </div>
-            <div id="preview" class="white">
+            <div id="preview" class="white boxshadow">
                 <h3 class="smalltitle">Preview</h3>
                 <h4 class="quotes">Cut down the amount of information, shows what users interested in only, and see it yourselves.</h4>
                 <div class="sample_container">
@@ -74,8 +108,8 @@
                     </div>
                 </div>
             </div>
-            <div id="research_interview" class="gray">
-                <h3 class="smalltitle">Research: Interview</h3>
+            <div id="research_interview" class="gray boxshadow">
+                <h3 class="smalltitle">Research - Interview</h3>
                 <h4 class="quotes">Interview into Why international students are not finding the most suitable place</h4>
                 <div id="interview" class="white">
                     <p>In my research, I drew the attention on Ann Arbor, a classic college town which
@@ -108,47 +142,72 @@
                     <p>Some of the students are not confident with their English ability, hence they tend to avoid verbal communication with the landlords. This makes it harder for them to get better understanding of the properties.</p>
                 </div>
             </div>
-            <div id="research_interview" class="gray">
-                <h3  class="smalltitle">Competitor Analysis</h3>
+            <div id="research_competitor_analysis" class="gray boxshadow">
+                <h3  class="smalltitle">Research - Competitor Analysis</h3>
                 <h4 class="quotes">Based on my interviews and some research, I collect four main ways people looking for housing informations.</h4>
-                    <div class="white">
-                        <img class="sample_icon" src="image/UMoffsite.png"><h4>UM Housing site</h4>
-                        
-                        <p>UM’s official housing site provides information about on-campus housing and a platform for
-                            landlords and the
-                            students to pair. It includes structured housing and multi-choice traffic information, but
-                            do not optimize
-                            information for international students.</p>
-                        </div>
-                        <div class="white">
-                            <img class="sample_icon" src="image/MTSA.png"><h4>MTSA life database</h4>
-                        <p>A wiki-like database constructed by Michigan Taiwanese Student Association (MTSA). Provides
-                            comprehensive
-                            information needed for Taiwanese students to live in Ann Arbor. The contents are maintained
-                            by a few students.
-                            Provide cultural information and few housing experiences. However, the quantity of
-                            experiences provided stays
-                            low, and the information provided isn’t updated.</p>
-                        </div>
-                        <div class="white">
-                            <img class="sample_icon" src="image/facebook.png"><h4>UMICH Housing, Rooms, Apartments, Sublets</h4>
-                        <p>Students of UM formed a Facebook group as a platform to share housing information. Also,
-                            provide the landlords a
-                            place to seek for tenants. Communications through Facebook are more convenient than E-mail.
-                            However, it still
-                            cannot solve the problem of the cultural problems.</p>
-                        </div>
-                        <div class="white">
-                            <img class="sample_icon" src="image/Apartmentlist.png"><h4>Apartment List</h4>
-                        <p>Apartment List is a web-based apartment pairing system. Users provide needs and preferences,
-                            and the system
-                            provides filtered housing information for the users. The results are highly related to the
-                            users’ needs, but
-                            cannot help with more complicated tasks like cultural and geographical problems. </p>
-                        </div>
+                <div class="white">
+                    <img class="sample_icon" src="image/UMoffsite.png"><h4>UM Housing site</h4>
+                    <p>UM’s official housing site provides housing information about both on-campus and off-campus. As one of the main channel the students looking for housing information, it includes structured information, but the amount of information it provide is overwhelmingly huge.</p>
+                </div>
+                <div class="white">
+                    <img class="sample_icon" src="image/MTSA.png"><h4>MTSA life database</h4>
+                    <p>A wiki-like forum constructed by Michigan Taiwanese Student Association (MTSA). The housing contents are maintained by a few students. Provide few housing experiences. However, the information is outdated and very few on the amounts.</p>
+                </div>
+                <div class="white">
+                    <img class="sample_icon" src="image/facebook.png"><h4>Facebook groups</h4>
+                    <p>Students of UM formed Facebook groups as a platform to share housing information. Communications through Facebook are more convenient than E-mail, but the information in the groups are messy and hard to search with.</p>
+                </div>
+                <div class="white">
+                    <img class="sample_icon" src="image/Apartmentlist.png"><h4>Apartment List</h4>
+                    <p>A web-based apartment pairing system. Users provide preferences and the system provides recommandations. However, their are too much questions to answer during the process, and only the apartments can be found.</p>
+                </div>
+                <h4 class="quotes">I compare four competitors and find out what should be addressed in my design.</h4>
+                <div class="sample_container">
+                    <div class="sample_1 deepgray">
+                        <h4 class="quotes">More is not always better</h4>
+                        <p style="text-align: left;">There are many options for the students, but with limited time, it's important to keep the results precise.</p>
+                    </div>
+                    <div class="sample_2 deepgray">
+                        <h4 class="quotes">The devil is in the detail</h4>
+                        <p style="text-align: left;">It's important to see through every corner of the rooms. But there's not much solutions for this.</p>
+                    </div>
+                    <div class="sample_3 deepgray">
+                        <h4 class="quotes">Language matters</h4>
+                        <p style="text-align: left;">It's already very convenient to contact anyone online. But having English as second language really is a barrier of communication.</p>
+                    </div>
+                </div>
             </div>
-                <h3>Sketch</h3>
-                <img class="sketch" src="image/sketch.png" alt="Sketch">
+            <div id="design_brainstorming" class="white boxshadow">
+                <h3 class="smalltitle">Design - Brainstorming</h3>
+                <h4 class="quotes">Based on research findings, I start some ideation for possible solutions</h4>
+                <div class="sample_container">
+                    <div class="sample_1for2 gray">
+                        <h4 class="quotes">International Brokers</h4>
+                        <img src="image/sketch_broker.png">
+                    </div>
+                    <div class="sample_2for2 gray">
+                        <h4 class="quotes">VR Room-viewing</h4>
+                        <img src="image/sketch_VR.png">
+                    </div>
+                </div>
+                <div class="sample_container">
+                    <div class="sample_1for2 gray">
+                        <h4 class="quotes">Robot Room-viewing</h4>
+                        <img src="image/sketch_robot.png">
+                    </div>
+                    <div class="sample_2for2 gray">
+                        <h4 class="quotes">Housing Mentor</h4>
+                        <img src="image/sketch_mentor.png">
+                    </div>
+                </div>
+                <div class="sample_container">
+                    <div class="sample_1for2 gray">
+                        <h4 class="quotes">Precision Searching</h4>
+                        <img src="image/sketch_precise.png">
+                    </div>
+                </div>
+            <h4 class="quotes">Merging functions from the possible solutions...</h4>
+            </div>
                 <h3>Persona</h3>
                 <img class="persona" src="image/persona.png" alt="Sketch">
                 <p id="personaInfo">Shiao-Ming Wang<br>
@@ -205,7 +264,7 @@
                     <li class="seperator"><a> | </a></li>
                     <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
                     <li class="seperator"><a> | </a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="aboutme.html">About</a></li>
                 </ul>
             </div>
             <div id="socialnetwork">
@@ -217,10 +276,10 @@
                 <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
             </div>
             <div id="gotop">^</div>
-            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script>
                 $(document).ready(function () {
                     $("nav ul li:first-of-type a").css("color", "#28536B")
+                    $(".fix_nav ul li:first-of-type a").css("color", "#28536B")
                 })
 
                 $(function () {
