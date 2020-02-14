@@ -33,7 +33,7 @@ h3{
 
 h4{
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     color: #616161;
 }
 
@@ -861,7 +861,7 @@ input[type=submit]:hover {
 
 .quotes{
     color: #5E5E5E;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .sample_container{
@@ -871,7 +871,7 @@ input[type=submit]:hover {
     grid-gap: 5px;
 }
 
-.sketch{
+.sample_pic{
     width: 100%;
 }
 
@@ -883,17 +883,29 @@ input[type=submit]:hover {
     position: relative;
 }
 
+.persona_container{
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .persona{
-    height: 170px;
-    float: left;
-    margin: 0 10px 10px 0;
+    height: 100%;
+    width: auto !important;
+    -ms-transform: translate(-25%, 0);
+    transform: translate(-25%, 0);
+    vertical-align: top;
+}
+
+#non_user{
+    -ms-transform: translate(-55%, 0);
+    transform: translate(-55%, 0);
 }
 
 #personaInfo{
-    color: rgb(51, 51, 51);
     font-weight: bold;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 0 10px 20px;
+    text-align: left;
 }
 
 #personaList li{
@@ -908,7 +920,14 @@ input[type=submit]:hover {
     color: #5E5E5E;
     font-weight: normal;
     list-style-position: outside;
-    text-align: justify;
+}
+
+.qoc p{
+    text-align: left;
+}
+
+.qoc_pic{
+    margin-top: 1.33em;
 }
 
 .paperPrototype{
@@ -1056,6 +1075,22 @@ footer{
     }    
 
     nav ul{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .fix_name{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .fix_nav{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        text-align: center;
+    }    
+
+    .fix_nav ul{
         text-align: center;
         margin: 10px 0;
     }
@@ -1237,6 +1272,19 @@ footer{
     }
 
     nav{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        background-color: #DDE8E9;
+        text-align: center;
+    }
+
+    .fix_name{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        background-color: #DDE8E9;
+    }
+
+    .fix_nav{
         grid-column: 1/-1;
         grid-row: 3/4;
         background-color: #DDE8E9;
