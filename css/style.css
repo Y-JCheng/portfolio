@@ -67,7 +67,11 @@ small{
     text-shadow: 
         -1px -1px 1px rgba(31, 64, 82, 0.05), 
         2px 2px 1px rgba(17, 36, 46, 0.2);
+}
 
+.link_in_p{
+    color: #5E5E5E;
+    text-decoration: underline;
 }
 
 nav li:not(.seperator) a:hover{
@@ -344,7 +348,7 @@ nav{
 #pro_umove{
     grid-column: 1/-1;
     grid-row: 2/3;
-    background-image: linear-gradient(#afd0ff65,#afd0ff78);
+    background-image: linear-gradient(#afd0ff65,#afd0ff7a,#afd0ff7a, #86a7da86, #698dc4ab);
 }
 
 #umove_caption{
@@ -358,7 +362,7 @@ nav{
 #pro_intranet{
     grid-column: 1/-1;
     grid-row: 3/4;
-    background-image: linear-gradient(#bebebe65,#bebebe78);
+    background-image: linear-gradient(#bebebe65,#bebebe78, #bebebe78, #a1a1a178, #83838378);
 }
 
 #intranet_caption{
@@ -372,7 +376,7 @@ nav{
 #pro_chi{
     grid-column: 1/-1;
     grid-row: 4/5;
-    background-image: linear-gradient(#ffb5cb65,#ff91b265);
+    background-image: linear-gradient(#ffb5cb65,#ff91b265, #ff91b265, #f0658f65, #c7496f65);
 }
 
 #chi_caption{
@@ -398,7 +402,7 @@ nav{
 #pro_photography{
     grid-column: 1/-1;
     grid-row: 6/7;
-    background-image: linear-gradient(#5ac2ab65,#5ac2ab41);
+    background-image: linear-gradient(#5ac2ab41,#5ac2ac55,#5ac2ab65,#45b49c65,#27927b7a);
 }
 
 #photography_caption{
@@ -412,7 +416,7 @@ nav{
 #pro_sna{
     grid-column: 1/-1;
     grid-row: 7/8;
-    background-image: linear-gradient(#ffc40060,#c5970060);
+    background-image: linear-gradient(#ffc8156b,#f6bd0069,#f5bc0067,#ecb50270,#be92017c);
 }
 
 #sna_caption{
