@@ -96,11 +96,14 @@ nav li{
 
 #fixed_tag{
     position: fixed;
-    bottom: 50px;
-    left: 10px;
+    bottom: 50%;
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    right: 5%;
     background-color: #5E5E5E;
     opacity: 0.3;
     padding: 0.3em 1em;
+    display: none;
 }
 
 #fixed_tag a{
@@ -109,6 +112,10 @@ nav li{
     font-weight: normal;
     padding: 0.2em;
     cursor: pointer;
+}
+
+.showinmobile{
+    display: none;
 }
 
 #fixed-nav-bar {
@@ -919,6 +926,22 @@ input[type=submit]:hover {
     width: 100%;
 }
 
+.avatar_icon{
+    width: 50% !important;
+}
+
+.quote_icon{
+    width: 20% !important;
+}
+
+.in_full{
+    width: 10% !important;
+}
+
+.for_quote{
+    text-align: left;
+}
+
 .sample_icon{
     width: 15%;
     float: right;
@@ -1375,9 +1398,16 @@ footer{
     }
 
     #fixed_tag{
-        bottom:0;
-        left: 0;
+        bottom: 0;
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        right: 0;
+        width: 100%;
         text-align: center;
+    }
+
+    .showinmobile{
+        display: inline;
     }
 
     .seperator{
@@ -1550,12 +1580,12 @@ footer{
         grid-gap: 15px;
     }
 
-    iframe{
-        width: 100%;
-    }
-
     .persona{
         margin: 0;
+    }
+
+    .in_full{
+        width: 20% !important;
     }
 
     .abouts{

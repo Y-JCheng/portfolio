@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
     <title>Yun-Jen (William) Cheng</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157591765-1"></script>
@@ -21,8 +25,8 @@
     </script>
     <script>
         $(document).ready(function () {
-                    $("#fixed-nav-bar").hide()
-                });
+            $("#fixed-nav-bar").hide()
+        });
         $(document).scroll(function () {
             if ($(this).scrollTop() > 100) {
                 $('#fixed-nav-bar').fadeIn();
@@ -56,41 +60,216 @@
             </ul>
         </div>
     </div>
-    
+
     <div class="container">
-    <header></header>
-    <div class="name">
-        <a href="index.html"><h1> Yun-Jen </h1><h2> (William) </h2><h1> Cheng</h1></a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Projects</a></li>
-            <li class="seperator"><a> | </a></li>
-            <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
-            <li class="seperator"><a> | </a></li>
-            <li><a href="aboutme.html">About</a></li>
-        </ul>
-    </nav>
-    <div class="projecttitle" id="intranetTitle">
-        <div>
-        <h2>Intranet Evaluation</h2>
-        <h3>UX research project on helping an research institute to evaluate their intranet system.</h3>
-    </div>
-    </div>
-    <div class="content">
-        <div class="abouts">
-            <h3 class="workingOn">I'm working on it.<br>Please look forward to it :)</h3>
+        <header></header>
+        <div class="name">
+            <a href="index.html">
+                <h1> Yun-Jen </h1>
+                <h2> (William) </h2>
+                <h1> Cheng</h1>
+            </a>
         </div>
-        <div class="skills">
-            <h3>Role in Project</h3>
-            <p>UX Researcher</p>
-            <h3>Research</h3>
-            <p>Contextual Inquiery | Affinities Diagram | Competitor Analysis</p>
-            <h3>Duration</h3>
-            <p>3 months  (Oct. - Dec. 2019)</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Projects</a></li>
+                <li class="seperator"><a> | </a></li>
+                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                <li class="seperator"><a> | </a></li>
+                <li><a href="aboutme.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="projecttitle" id="intranetTitle">
+            <div>
+                <h2>Intranet Evaluation</h2>
+                <h3>UX research project on helping an research institute to evaluate their intranet system.</h3>
+            </div>
         </div>
-    </div>
-    <footer>
+        <div class="content" role="main">
+            <div class="abouts">
+                <div id="problem_statement"  class="gray boxshadow">
+                    <h3 class="smalltitle">Problems</h3>
+                    <h4 class="quotes with_detail">
+                        Intranet can be a powerful tool for knowledge management, but sometimes, <b>People Just Don't Use It</b>
+                    </h4>
+                    <p class="detail">My team worked with an academic institute at the University of Michigan to evaluate its intranet system. Our goal is to find out why the usage rate remains low and provide recommendations.</p>
+                </div>
+                <div id="client_meeting" class="white boxshadow">
+                    <h3 class="smalltitle">Client Meeting</h3>
+                    <h4 class="quotes with_detail"><b>Meet</b> with the client, <b>Scope</b> the project, and <b>Understand</b> the problems</h4>
+                    <p class="detail">We met with the manager of the Intranet and asked her about the systems and users. In the meeting, we found out the main issues the institute facing are that:</p>
+                    <div class="gray">
+                        <h4 class="quotes with_detail narrow_top">Users are...</h4>
+                        <ul>
+                            <li><b>Not familiar with the available information</b></li>
+                            <li><b>Having trouble looking for information on the site</b></li>
+                            <li><b>Lack of engagement in terms of visitation</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="research_literature" class="gray boxshadow">
+                    <h3 class="smalltitle">Research - Literature Review</h3>
+                    <h4 class="quotes with_detail">Search for the <b>Factors Influence the Usability</b> of the Intranet</h4>
+                    <ul><b>
+                        <li>Importance and relevance of the intranet to users’ jobs</li>
+                        <li>Reliability and user-friendliness</li>
+                        <li>Levels of web awareness and value additionality.</li>
+                        <li>Technical support</li>
+                        <li>Culture of information sharing</li>
+                    </ul></b>
+                </div>
+                <div id="research_contextual_inquiry" class="gray boxshadow">
+                    <h3 class="smalltitle">Research - Contextual Inquiry</h3>
+                    <h4 class="quotes">Conducted six interviews with <b>3 Kinds of Users</b></h4>
+                    <div class="sample_container">
+                        <div class="deepgray sample_1">
+                            <h4 class="quotes with_detail">Administrative team</h4>
+                            <img class="avatar_icon" src="image/Intranet/user_administrative.png">
+                            <br>Manage the Intranet
+                            <br>Upload information
+                        </div>
+                        <div class="deepgray sample_2">
+                            <h4 class="quotes with_detail">IT staffs</h4>
+                            <img class="avatar_icon" src="image/Intranet/user_IT.png">
+                            <br>Maintain the Intranet
+                        </div>
+                        <div class="deepgray sample_3">
+                            <h4 class="quotes with_detail">Scientists</h4>
+                            <img class="avatar_icon" src="image/Intranet/user_researcher.png">
+                            <br>Search for information
+                            <br>Upload information
+                        </div>
+                    </div><br>
+                        <p class="detail">During the interview, they were asked to demonstrate or talk about the following topics/moves:</p>
+                        <ul><b>
+                            <li>Their working environment and working process</li>
+                            <li>When do they use Intranet, how they use it, and their experience using it</li>
+                            <li>How they retrieve information</li>
+                        </ul></b>
+                </div>
+                <div id="research_affinity_diagram" class="gray boxshadow">
+                    <h3 class="smalltitle">Research - Affinity Diagram</h3>
+                    <h4 class="quotes">Used the <b>Affinity Diagram</b> to find the patterns of the information</h4>
+                    <img class="sample_pic" src="image/Intranet/affinity_wall.gif">
+                    <p>For better efficiency, We worked together and created a physical affinity wall.<br>
+                    In this session, we grouped the affinity notes into 5 categories, including:</p>
+                    <div class="sample_container">
+                        <div class="deepgray boxshadow sample_1for2 qoc">
+                            <h4 class="quotes with_detail narrow_top">Intended Audience & Social Feed</h4>
+                            <p class=detail>What users expect to the Intranet & What do they know about it.</p>
+                        </div>
+                        <div class="deepgray boxshadow sample_2for2 qoc">
+                            <h4 class="quotes with_detail narrow_top">Experience toward the Intranet</h4>
+                            <p class=detail>What do users think about the Intranet & Their experiences using it.</p>
+                        </div>
+                    </div>
+                    <div class="sample_container">
+                        <div class="deepgray boxshadow sample_1 qoc">
+                            <h4 class="quotes with_detail narrow_top">Usability of Content</h4>
+                            <p class=detail>What do users think about the content provided on the Intranet.</p>
+                        </div>
+                        <div class="deepgray boxshadow sample_2 qoc">
+                            <h4 class="quotes with_detail narrow_top">Editing</h4>
+                            <p class=detail>How the information is edited.</p>
+                        </div>
+                        <div class="deepgray boxshadow sample_3 qoc">
+                            <h4 class="quotes with_detail narrow_top">Alternatives</h4>
+                            <p class=detail>In what way users get the information they need that is also on the Intranet.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="findings" class="white boxshadow">
+                    <h3 class="smalltitle">Findings</h3>
+                    <p class="detail"><b>What's good</b></p>
+                    <div class="deepgray">
+                        <div class="white quotebox">
+                            <h4 class="quotes narrow_top with_detail">Quick links and administrative content are useful</h4>
+                        </div>
+                        <img class="quote_icon in_full" src="image/Intranet/user_administrative.png">
+                        <img class="quote_icon in_full" src="image/Intranet/user_IT.png">
+                        <img class="quote_icon in_full" src="image/Intranet/user_researcher.png">
+                    </div>
+                    <br>
+                    <p class="detail"><b>What's bad</b></p>
+                    <div class="sample_container deepgray">
+                        <div class="sample_1for2 for_quote">
+                            <div class="white quotebox">
+                                <h4 class="quotes">The bad structure and visual design are why people don't use it</h4>
+                            </div>
+                            <img class="quote_icon" src="image/Intranet/user_administrative.png">
+                            Managers
+                        </div>
+                        <div class="sample_2for2 for_quote">
+                            <div class="white quotebox">
+                                <h4 class="quotes">Information is <b>outdated</b>, and the content is too <b>administrative-focused</b></h4>
+                            </div>
+                            <img class="quote_icon" src="image/Intranet/user_researcher.png">
+                            Researchers
+                        </div>
+                    </div>
+                    <br>
+                    <p class="detail"><b>Expectation to Intranet</b></p>
+                    <div class="sample_container deepgray">
+                        <div class="sample_2for2 for_quote">
+                            <div class="white quotebox">
+                                <h4 class="quotes">To store information</h4>
+                            </div>
+                            <img class="quote_icon" src="image/Intranet/user_researcher.png">
+                            Researchers
+                        </div>
+                        <div class="sample_1for2 for_quote">
+                            <div class="white quotebox">
+                                <h4 class="quotes">A platform to interact on</h4>
+                            </div>
+                            <img class="quote_icon" src="image/Intranet/user_administrative.png">
+                            <img class="quote_icon" src="image/Intranet/user_IT.png">
+                            Managers & ITs
+                        </div>
+                    </div>
+                    <br>
+                    <p class="detail"><b>Alternatives</b></p>
+                    <div class="deepgray">
+                        <div class="white quotebox">
+                            <h4 class="quotes narrow_top with_detail">"I send an e-mail or make a phone call to ask a question."</h4>
+                        </div>
+                        <img class="quote_icon in_full" src="image/Intranet/user_researcher.png">
+                        Researchers
+                    </div>
+                    <br>
+                    <p class="detail"><b>The Actual Problem</b></p>
+                    <div class="deepgray">
+                        <h4 class="quotes with_detail narrow_top"><b>Users do not use/need the system</b></h4>
+                        <p class="detail">The content on the Intranet is administrative-focused, and the researchers already have their own
+                            ways to get help or find information.</p>
+                    </div>
+                </div>
+                <div id="recommendations" class="gray boxshadow">
+                    <h3 class="smalltitle">Recommendations</h3>
+                    <h4 class="quotes with_detail"><b>Cease the Operation</b></h4>
+                    <p class="detail">During the interview, we found out that the <b>IT department does not have enough staff to maintain the system</b>. Also, <b>researchers do not have enough time to update</b> everything on the Intranet.</p>
+                    <p class="detail">The current usage is mainly by the users assigned to upload information. However, <b>people don't look for information on it</b>; Instead, they only use the quick links to find other pages.</p>
+                    <p class="detail">The Intranet is hosted by an outside provider, and <b>it costs</b>. Based on the inactivity and lack of engagement with the Intranet, there is not sufficient reason to continue the operation of the site.</p>
+                    <h4 class="quotes with_detail"><b>If they want to keep it</b></h4>
+                    <ul>
+                        <li><b>More discussion between the administrative team, IT, and researchers</b> on Expectation to the intranet, Divide the maintaining workload.</li>
+                        <li><b>Survey the researchers</b> for the features or the information they would like to have on the Intranet.</li>
+                        <li><b>The interface and the structure should be simplified</b> for the non-administrators to understand.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills">
+                <h3>Teammates</h3>
+                <p>Jack Lyons, Maricela Avalos, Ming-Hsuan Tao</p>
+                <h3>Role in Project</h3>
+                <p>UX Researcher</p>
+                <h3>Research</h3>
+                <p>Contextual Inquiery | Affinities Diagram | Literature Review</p>
+                <h3>Duration</h3>
+                <p>3 months (Oct. - Dec. 2019)</p>
+            </div>
+        </div>
+        <footer>
             <div class="footnav">
                 <ul>
                     <li><a href="index.html">Projects</a></li>
@@ -108,15 +287,69 @@
                 <a href="mailto:yhcheng@umich.edu" target="_blank"><img src="image/mail.png" alt="send me a mail"></a>
                 <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
             </div>
-            <script src="js/javascript.js"></script>
+            <div id="gotop">^</div>
+            <div id="fixed_tag">
+                <hr class="seperator"><a class="showinmobile"> | </a>
+                <a id="go_client_meeting">Client Meeting</a>
+                <hr class="seperator"><a class="showinmobile"> | </a>
+                <a id="go_research">Research</a>
+                <hr class="seperator"><a class="showinmobile"> | <br> | </a>
+                <a id="go_findings">Findings</a>
+                <hr class="seperator"><a class="showinmobile"> | </a>
+                <a id="go_recommendations">Recommendations</a>
+                <hr class="seperator"><a class="showinmobile"> | </a>
+            </div>
             <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script>
                 $(document).ready(function () {
                     $("nav ul li:first-of-type a").css("color", "#28536B")
                     $(".fix_nav ul li:first-of-type a").css("color", "#28536B")
+                
+                    $(function () {
+                    $("#gotop").click(function () {
+                        $("html,body").animate({ scrollTop: 0 }, 'fast');
+                        return false;
+                    });
+
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 400) {
+                            $('#gotop').fadeIn();
+                        } else {
+                            $('#gotop').fadeOut();
+                        }
+                    });
+
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 600) {
+                            $('#fixed_tag').fadeIn();
+                        } else {
+                            $('#fixed_tag').fadeOut();
+                        }
+                    });
+
+                    $("#fixed_tag").mouseenter(function(){
+                        $("#fixed_tag").css("opacity","0.7")
+                    })
+                    $("#fixed_tag").mouseleave(function(){
+                        $("#fixed_tag").css("opacity","0.3")
+                    })
+                    $("#go_client_meeting").click(function(){
+                        $("html,body").animate({scrollTop: ($('#client_meeting').offset().top-50)}, 'fast');
+                    })
+                    $("#go_research").click(function(){
+                        $("html,body").animate({scrollTop: ($('#research_literature').offset().top-50)}, 'fast');
+                    })
+                    $("#go_findings").click(function(){
+                        $("html,body").animate({scrollTop: ($('#findings').offset().top-50)}, 'fast');
+                    })
+                    $("#go_recommendations").click(function(){
+                        $("html,body").animate({scrollTop: ($('#recommendations').offset().top-50)}, 'fast');
+                    })
+                });
                 })
             </script>
         </footer>
     </div>
 </body>
+
 </html>
