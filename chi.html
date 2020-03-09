@@ -54,7 +54,7 @@
             <ul>
                 <li><a href="index.html">Projects</a></li>
                 <li class="seperator"><a> | </a></li>
-                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt" target="_blank">Resume</a></li>
                 <li class="seperator"><a> | </a></li>
                 <li><a href="aboutme.html">About</a></li>
             </ul>
@@ -70,7 +70,7 @@
         <ul>
             <li><a href="index.html">Projects</a></li>
             <li class="seperator"><a> | </a></li>
-            <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+            <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt" target="_blank">Resume</a></li>
             <li class="seperator"><a> | </a></li>
             <li><a href="aboutme.html">About</a></li>
         </ul>
@@ -83,13 +83,219 @@
     </div>
     <div class="content">
         <div class="abouts">
-            <h3 class="workingOn">I'm working on it.<br>Please look forward to it :)</h3>
+            <div id="problem_statement"  class="gray boxshadow">
+                <h3 class="smalltitle">Problems</h3>
+                <h4 class="quotes with_detail"><b>Stress-eating may provide temporary relief, but when it loses control, many problems await.</b></h4>
+                <p class="detail">Stress-eating is a common behavior in modern society. While it's not yet defined as harmful, people are unaware of themselves doing it. However, this may cause unhealthy loops on digestive disorders, body issues, and anxiety.</p>
+                <p class="detail">In this project, we researched on the pattern of stress eating behavior and tried to raise people's awareness of it with a metaphorical game.</p>
+            </div>
+            <div id="overview" class="white boxshadow">
+                <h3 class="smalltitle">Overview</h3>
+                <h4 class="quotes with_detail"><b>Simulate the Dilemma</b> of everyday stressed-eating scenes through the <b>Designed Mechanism</b></h4>
+                <div class="gray">
+                    <h4 class="quotes with_detail">Maintain good condition</h4>
+                    <p class="detail">- Users have to maintain their <b>Focus</b>, <b>Hunger</b>, and <b>Stress</b> while exploring the maze.<br>
+                        - When <b>Focus</b> decrease, the vision becomes fuzzy</p>
+                        <img class="sample_pic" src="image/CHI/fuzzy.gif">
+                </div>
+                <div class="gray">
+                    <h4 class="quotes with_detail">Berry as junk food</h4>
+                    <p class="detail">- Eating berry may lower the <b>Stress</b> a little, but <b>Focus</b> drops at the same time.<br>
+                        - Simulate the temporary relief and the longterm effect</p>
+                        <img class="sample_pic" src="image/CHI/berrys.gif">
+                </div>
+                <div class="gray">
+                    <h4 class="quotes with_detail">Pieces as tasks</h4>
+                    <p class="detail">- Find all the pieces to pass the game.<br>
+                        - Simulate the sources of stress in daily life</p>
+                        <img class="sample_pic" src="image/CHI/pieces.gif">
+                </div>
+                <div class="gray">
+                    <h4 class="quotes with_detail">Exercise as alternatives</h4>
+                    <p class="detail">- Exercise may lower "Stress" and increase "Focus" at the same time.<br>
+                        - Give players an example of alternatives to destress.</p>
+                        <img class="sample_pic" src="image/CHI/exercise.png">
+                </div>
+            </div>
+            <div id="research_survey" class="gray boxshadow">
+                <h3 class="smalltitle">Research - Survey</h3>
+                <h4 class="quotes">Conduct a survey to learn about people's <b>Thoughts and Experiences on Stress-eating</b></h4>
+                <div class="white">
+                    <p>We surveyed with students of 3 Big Ten universities from undergrad to Ph.D.; the survey questions are about:</p>
+                    <ol><b>
+                        <li>Their frequency of stress-eating</li>
+                        <li>Their experiences on stress-eating</li>
+                        <li>What do they eat</li>
+                        <li>How they feel during/after stress-eat</li>
+                    </ol></b>
+                </div>
+                <h4 class="quotes with_detail"><b>76% of the participants stress-eat.</b> And they eat...</h4>
+                <img class="sample_pic" src="image/CHI/food_cloud.png">
+            </div>
+            <div id="research_interview" class="gray boxshadow">
+                <h3 class="smalltitle">Research - Interview</h3>
+                <h4 class="quotes">Conduct 7 interviews to explore different kinds of stress-eating behavior</h4>
+                <p class="detail">We contacted the participants who're willing to share more stories about there stories. And after that, we concluded the information obtained from surveys and interviews and <b>found out the pattern of stress-eating behavior</b>.</p>
+                <div class="white">
+                    <img class="sample_pic" src="image/CHI/pattern.png">
+                </div>
+                <br>
+                <p class="detail"><b>The Challenge</b></p>
+                <div class="deepgray">
+                    <h4 class="quotes with_detail narrow_top">Stress-eat is not that bad until <b>Lose Control</b></h4>
+                    <p class="detail">Not all the participants found stress-eat a bad thing, but if them overeat unintentionally, they feel bad.</p>
+                </div>
+                <div class="deepgray">
+                    <h4 class="quotes with_detail narrow_top">People stress-eat because they <b>Don't Have Enough Time to Destress</b></h4>
+                    <p class="detail">Most of the participants have their ways destress. But while they are busy working/studying, eating is the most efficient way to destress.</p>
+                </div>
+                <div class="deepgray">
+                    <h4 class="quotes with_detail narrow_top">People stress-eat while they are <b>Alone at Home</b></h4>
+                    <p class="detail">Most of the participants stress-eat while they are alone; some of the participants said that peer pressure could stop them from stress-eating.</p>
+                </div>
+            </div>
+            <div id="design_ideation" class="white boxshadow">
+                <h3 class="smalltitle">Design - Ideation</h3>
+                <h4 class="quotes">We focus on the challenges and <b>Brainstorming for Potential Solutions</b></h4>
+                <p class="detail"><b>Set a limitation for stress-eat</b></p>
+                <div class="sample_container">
+                    <div class="sample_1 gray">
+                        <h4 class="quotes with_detail">Mini Thief</h4>
+                        <p class="detail">A mini robot with emotion steals your food and hides it somewhere else.</p>
+                    </div>
+                    <div class="sample_2 gray">
+                        <h4 class="quotes with_detail">Don't eat; Earn!</h4>
+                        <p class="detail">If the user doesn't eat a certain amount of snacks in the box, they get money back.</p>
+                    </div>
+                    <div class="sample_3 gray">
+                        <h4 class="quotes with_detail">Crocodile's Food</h4>
+                        <p class="detail">Put snacks in a Crocodile Dentist, when people eat, croc bite.</p>
+                    </div>
+                </div>
+                <p class="detail"><b>Choose healthy foods</b></p>
+                <div class="sample_container">
+                    <div class="sample_1for2 gray">
+                        <h4 class="quotes with_detail">Lower Cortisol app</h4>
+                        <p class="detail">Remind users to choose alternative foods. If they follow, get points in the game/app.
+                        </p>
+                    </div>
+                    <div class="sample_2for2 gray">
+                        <h4 class="quotes with_detail">Water flavor trickery</h4>
+                        <p class="detail">Make water taste like juice through technology on the rim.</p>
+                    </div>
+                </div>
+                <p class="detail"><b>Keep people accompanied</b></p>
+                <div class="sample_container">
+                    <div class="sample_1for2 gray">
+                        <h4 class="quotes with_detail">VR/AR pet</h4>
+                        <p class="detail">Destress through a companion.</p>
+                    </div>
+                    <div class="sample_2for2 gray">
+                        <h4 class="quotes with_detail">VR Cafe</h4>
+                        <p class="detail">Meet up with friends in the virtual world to keep working.</p>
+                    </div>
+                </div><br>
+                <p class="detail">However, nobody would like to use an app that lies or interrupts. To solve the problem fundamentally, the best way is to <b>Keep Them Aware</b>.</p>
+                <h4 class="quotes narrow_top detail">We decide to design a game to <b>Raise Awareness of Stress-eating</b></h4>
+            </div>
+            <div id="design_story_line" class="white boxshadow">
+                <h3 class="smalltitle">Design - Story Line</h3>
+                <h4 class="quotes">Designed a story to <b>Introduce the Metaphors</b></h4>
+                <div class="gray">
+                    <h4 class="quotes with_detail narrow_top">Story begins with...</h4>
+                    <p>Alien character Remy is on tour in outer space while <b>an extremely savory smell coming from Earth catches Remy’s attention</b>. Remy subconsciously steered the mini starship and followed the smell towards Earth. Too focused on getting to the smell, Remy’s ship gets caught in Earth’s gravity and crashes into 10 pieces on an island in the middle of the ocean. Surviving the crash and waking up from the impact, Remy sets off on a journey to find the <b>scattered pieces within 14 days</b> to catch the routing starship back to its planet. </p>
+                    <img class="sample_pic" src="image/CHI/game_start.gif">
+                </div>
+                <h4 class="quotes">Tell players what the game is all about in the end</h4>
+                <div class="gray">
+                    <h4 class="quotes with_detail narrow_top">Story ends with...</h4>
+                    <p><b>"Would you like to take the berries back to your planet?"</b></p>
+                        <p><b>Yes</b> - "We respect your choice, but understand that overeating unhealthy food in stressful situations can harm your health. Good luck!"<br>
+                        <b>No</b> -  "Congratulations! Seems like you've understood staying away from unhealthy foods can lead to a healthier life!"</p>
+                </div>
+            </div>
+            <div id="design_mechanism" class="white boxshadow">
+                <h3 class="smalltitle">Design - Mechanism</h3>
+                <h4 class="quotes">Designed the mechanism to <b>Simulate the Dilemma</b> during gameplay</h4>
+                <div class="gray">
+                    <div class="sample_container">
+                        <div class="sample_2for2 qoc">
+                            <h4 class="quotes"><b>Stress, Hunger, Focus</b></h4>
+                            <p>Just like in real life, the character in the game needs to digest. Also, their <b>Hunger</b> increase and <b>Focus</b> decrease throughout time.</p>
+                        </div>
+                        <div class="sample_1for2">
+                            <img class="avatar_icon pig" src="image/CHI/variable.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="gray">
+                    <div class="sample_container">
+                        <div class="sample_2for2 qoc">
+                            <h4 class="quotes"><b>Magic Berry (Junk food)</b></h4>
+                            <p>Magic Berry (Junk food)
+                                While the player decides to eat the berry, the <b>Stress</b> decreases a little bit. However, the <b>Focus</b> drops at the same time. And low <b>Focus</b> leads to a fuzzier vision, which makes the game become harder.</p>
+                        </div>
+                        <div class="sample_1for2">
+                            <img class="avatar_icon" src="image/CHI/berry.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="gray">
+                    <div class="sample_container">
+                        <div class="sample_2for2 qoc">
+                            <h4 class="quotes"><b>Spaceship Pieces (Works)</b></h4>
+                            <p>Players will have to find the pieces in limited time, which is the metaphor of the deadlines.</p>
+                        </div>
+                        <div class="sample_1for2">
+                            <img class="avatar_icon" src="image/CHI/piece.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="gray">
+                    <div class="sample_container">
+                        <div class="sample_2for2 qoc">
+                            <h4 class="quotes"><b>Exercise (Alternatives)</b></h4>
+                            <p>Players may choose to exercise with the animals on the island. Exercise can increase <b>Focus</b> and lower <b>Stress</b> but takes more time.</p>
+                        </div>
+                        <div class="sample_1for2">
+                            <img class="avatar_icon pig" src="image/CHI/pig.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="reflection" class="gray boxshadow">
+                <h3 class="smalltitle">Takeaways & Reflection</h3>
+                <h4 class="quotes">Takeaways</h4>
+                <div class="white">
+                    <h4 class="quotes with_detail narrow_top"><b>Emotion matters</b></h4>
+                    <p class="detail">In the early stage of our design process, we tried to find ways to interrupt or lie to users. I then realize that if an app or a game is linked to negative emotions, the user would never be satisfied with it even if they reached the goal.</p>
+                </div>
+                <div class="white">
+                    <h4 class="quotes with_detail narrow_top"><b>Be aware not to judge easily</b></h4>
+                    <p class="detail">Stress-eating may lead to the weight change. Although not everyone likes to gain or lose weight, we have to be careful not to judge people by their shapes, especially when it comes to designing.</p>
+                </div>
+                <h4 class="quotes">Reflection</h4>
+                <div class="white">
+                    <h4 class="quotes with_detail narrow_top"><b>Test, test, 123</b></h4>
+                    <p class="detail">We have very limited time on research and design before submitting to the CHI2020 Student Game Competition. And so, we don't have enough time on user testing. Through user tests, we may refine the design and get a better understanding of the social impact of the game.</p>
+                </div>
+            </div>
+            <div class="other_projects">
+                <a>...</a><br>
+                <h4>You may also interested in my other projects</h4><br>
+                <h4><a class="link_other" href="umove.html">UMove</a></h4><a> | </a>
+                <h4><a class="link_other" href="intranet.html">Intranet Evaluation</a></h4><a> | </a>
+                <h4><a class="link_other" href="chi.html">ChompBerry</a></h4>
+            </div>
         </div>
         <div class="skills">
+            <h3>Teammates</h3>
+            <p>Jason Chou, Shih-Yu Chu, Tianyang Lu, Dehyee Esther Tang, Ming-Hsuan Tao<br><br>
+                Special thanks to Prof. Mark Newman for providing precious advice during the design process</p>
             <h3>Role in Project</h3>
             <p>UX Researcher<br>UX Designer</p>
             <h3>Research</h3>
-            <p>Interview | Literature Review</p>
+            <p>Survey | Interview | Literature Review</p>
             <h3>Design</h3>
             <p>Persona | Wireframing | Prototyping</p>
             <h3>Duration</h3>
@@ -101,7 +307,7 @@
                 <ul>
                     <li><a href="index.html">Projects</a></li>
                     <li class="seperator"><a> | </a></li>
-                    <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                    <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt" target="_blank">Resume</a></li>
                     <li class="seperator"><a> | </a></li>
                     <li><a href="aboutme.html">About</a></li>
                 </ul>
@@ -114,13 +320,67 @@
                 <a href="mailto:yhcheng@umich.edu" target="_blank"><img src="image/mail.png" alt="send me a mail"></a>
                 <br><br><small>Designed and hand-coded by Yun-Jen Cheng © 2019</small><br><br>
             </div>
-            <script src="js/javascript.js"></script>
+            <div id="gotop">^</div>
+            <div id="fixed_tag">
+                <hr class="seperator"><a class="showinmobile"> | </a>
+                <a id="go_overview">Overview</a>
+                <hr class="seperator"><a class="showinmobile"> | </a>
+                <a id="go_research">Research</a>
+                <hr class="seperator"><a class="showinmobile"> | <br> | </a>
+                <a id="go_design">Design</a>
+                <hr class="seperator"><a class="showinmobile"> | </a>
+                <a id="go_reflection">Reflection</a>
+                <hr class="seperator"><a class="showinmobile"> | </a>
+            </div>
             <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script>
                 $(document).ready(function () {
                     $("nav ul li:first-of-type a").css("color", "#28536B")
                     $(".fix_nav ul li:first-of-type a").css("color", "#28536B")
-                })
+                    $(".other_projects h4:nth-of-type(4) a").css("color", "#28536B")
+                });
+
+                $(function () {
+                    $("#gotop").click(function () {
+                        $("html,body").animate({ scrollTop: 0 }, 'fast');
+                        return false;
+                    });
+
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 400) {
+                            $('#gotop').fadeIn();
+                        } else {
+                            $('#gotop').fadeOut();
+                        }
+                    });
+
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 600) {
+                            $('#fixed_tag').fadeIn();
+                        } else {
+                            $('#fixed_tag').fadeOut();
+                        }
+                    });
+
+                    $("#fixed_tag").mouseenter(function(){
+                        $("#fixed_tag").css("opacity","0.7")
+                    })
+                    $("#fixed_tag").mouseleave(function(){
+                        $("#fixed_tag").css("opacity","0.3")
+                    })
+                    $("#go_overview").click(function(){
+                        $("html,body").animate({scrollTop: ($('#overview').offset().top-50)}, 'fast');
+                    })
+                    $("#go_research").click(function(){
+                        $("html,body").animate({scrollTop: ($('#research_survey').offset().top-50)}, 'fast');
+                    })
+                    $("#go_design").click(function(){
+                        $("html,body").animate({scrollTop: ($('#design_ideation').offset().top-50)}, 'fast');
+                    })
+                    $("#go_reflection").click(function(){
+                        $("html,body").animate({scrollTop: ($('#reflection').offset().top-50)}, 'fast');
+                    })
+                });
             </script>
         </footer>
     </div>

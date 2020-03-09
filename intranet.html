@@ -54,7 +54,7 @@
             <ul>
                 <li><a href="index.html">Projects</a></li>
                 <li class="seperator"><a> | </a></li>
-                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt" target="_blank">Resume</a></li>
                 <li class="seperator"><a> | </a></li>
                 <li><a href="aboutme.html">About</a></li>
             </ul>
@@ -74,7 +74,7 @@
             <ul>
                 <li><a href="index.html">Projects</a></li>
                 <li class="seperator"><a> | </a></li>
-                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt" target="_blank">Resume</a></li>
                 <li class="seperator"><a> | </a></li>
                 <li><a href="aboutme.html">About</a></li>
             </ul>
@@ -123,18 +123,18 @@
                     <h4 class="quotes">Conducted six interviews with <b>3 Kinds of Users</b></h4>
                     <div class="sample_container">
                         <div class="deepgray sample_1">
-                            <h4 class="quotes with_detail">Administrative team</h4>
+                            <h4 class="quotes with_detail too_big">Administrative team</h4>
                             <img class="avatar_icon" src="image/Intranet/user_administrative.png">
                             <br>Manage the Intranet
                             <br>Upload information
                         </div>
                         <div class="deepgray sample_2">
-                            <h4 class="quotes with_detail">IT staffs</h4>
+                            <h4 class="quotes with_detail too_big">IT staffs</h4>
                             <img class="avatar_icon" src="image/Intranet/user_IT.png">
                             <br>Maintain the Intranet
                         </div>
                         <div class="deepgray sample_3">
-                            <h4 class="quotes with_detail">Scientists</h4>
+                            <h4 class="quotes with_detail too_big">Scientists</h4>
                             <img class="avatar_icon" src="image/Intranet/user_researcher.png">
                             <br>Search for information
                             <br>Upload information
@@ -257,6 +257,13 @@
                         <li><b>The interface and the structure should be simplified</b> for the non-administrators to understand.</li>
                     </ul>
                 </div>
+                <div class="other_projects">
+                    <a>...</a><br>
+                    <h4>You may also interested in my other projects</h4><br>
+                    <h4><a class="link_other" href="umove.html">UMove</a></h4><a> | </a>
+                    <h4><a class="link_other" href="intranet.html">Intranet Evaluation</a></h4><a> | </a>
+                    <h4><a class="link_other" href="chi.html">ChompBerry</a></h4>
+                </div>
             </div>
             <div class="skills">
                 <h3>Teammates</h3>
@@ -274,7 +281,7 @@
                 <ul>
                     <li><a href="index.html">Projects</a></li>
                     <li class="seperator"><a> | </a></li>
-                    <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt">Resume</a></li>
+                    <li><a href="https://drive.google.com/open?id=1WdkvutaPvJvLwWA7XAOEyFaFu6pL2gOt" target="_blank">Resume</a></li>
                     <li class="seperator"><a> | </a></li>
                     <li><a href="aboutme.html">About</a></li>
                 </ul>
@@ -304,6 +311,7 @@
                 $(document).ready(function () {
                     $("nav ul li:first-of-type a").css("color", "#28536B")
                     $(".fix_nav ul li:first-of-type a").css("color", "#28536B")
+                    $(".other_projects h4:nth-of-type(3) a").css("color", "#28536B")
                 
                     $(function () {
                     $("#gotop").click(function () {
