@@ -636,16 +636,26 @@ nav{
     grid-gap: 15px;
 }
 
-.abouttitle{
-    grid-column: 3/6;
-    grid-row: 3/4;
-    background-color: #DDE8E9;
-    padding:20px;
-    line-height: 2;
+#abouttitle{
+    padding:1em;
+    height: 250px;
 }
 
-.abouttitle h1{
-    font-weight: normal;
+#abouttitle h1{
+    padding-left: 3em;
+    padding-top: 0em;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#greetingbox{
+    width: 80%;
+    height: 100%;
+    display: inline;;
+    text-align: left;
+
 }
 
 .abouts{
@@ -659,20 +669,9 @@ nav{
     color: #5E5E5E
 }
 
-.profilePic{
-    grid-column: 2/3;
-    grid-row:3/4;
-    padding: 20px 0 20px 5px;
-    background-color: #DDE8E9;
-    width: 100%;
-    vertical-align: middle;
-}
-
 .mypic{
-    width: 100%;
     height: 100%;
     display: inline-block;
-    object-fit: cover;
 }
 
 .skills{
@@ -1309,13 +1308,23 @@ footer{
         grid-row: 15/16;
     }
 
-    .abouttitle{
-        grid-column: 2/6;
-        grid-row: 4/5;
+    #abouttitle{
+        grid-column: 1/6;
+        grid-row: 5/6;
+        height: 100px;
+        padding: 0em;
     }
 
-    .profilePic{
-        display: none;
+    #abouttitle h1{
+        padding-left: 0.5em;
+    }
+
+    #my_abouts{
+        grid-row: 1/2;
+    }
+
+    #my_skills{
+        grid-row: 2/3;
     }
 
     .content{
